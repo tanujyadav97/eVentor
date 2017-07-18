@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/calender_container"
+    android:orientation="vertical">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:background="#001a1a">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/day"
+        android:layout_alignEnd="@+id/day"
+        android:id="@+id/mounth"
+        android:text="March"
+        android:textColor="#e6e6e6"
+        android:textAllCaps="true"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="23"
+        android:textColor="#e6e6e6"
+        android:textSize="40sp" />
+  </RelativeLayout>
+  <FrameLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/calendar"/>
+</LinearLayout>
